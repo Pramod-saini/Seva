@@ -1,0 +1,154 @@
+/* volunteer section */
+.volunteer-section { 
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  /* background: #fefaf6; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.volunteer-content {
+  flex: 500px;
+  max-width: 100%;
+  padding: 0 0 0 14rem;
+}
+
+.volunteer-content h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.subtitle {
+  color: #444;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.description {
+  display: flex;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.volunteer-list {
+  columns: 2;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.volunteer-list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #333;
+}
+
+.volunteer-list i {
+  color: orangered;
+  margin-right: 8px;
+}
+
+.apply-btn {
+  padding: 10px 20px;
+  background: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-btn:hover {
+  background: rgb(248, 163, 5);
+}
+
+.volunteer-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 50%;
+}
+
+.circle-wrap {
+  width: 200px;
+  height: 200px;
+  border: 4px solid rgb(245, 114, 66);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1024px) {
+  .volunteer-content {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .volunteer-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .volunteer-content {
+    padding: 0;
+  }
+
+  .description {
+    justify-content: center;
+  }
+
+  .volunteer-list {
+    columns: 1;
+  }
+
+  .volunteer-image {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .circle-wrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle-wrap img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .volunteer-content h2 {
+    font-size: 24px;
+  }
+
+  .subtitle,
+  .description,
+  .volunteer-list li {
+    font-size: 14px;
+  }
+
+  .apply-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}
+

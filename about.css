@@ -1,0 +1,271 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#main-content1 {
+  margin-top: 10vh;
+  
+}
+
+#body1 h1{
+    font-weight: bolder;
+    font-size:xxx-large;
+    
+}
+
+    .panel {
+      width: 22vh;
+      height: auto;
+      margin: 0 10px;
+      border-radius: 20px;
+      background-image: url(https://media.istockphoto.com/id/1295576072/photo/helping-the-poor-pilgrims-inside-gangasagar-mela-transit-camp-at-kolkata.jpg?s=612x612&w=0&k=20&c=hqPVz3qX-Lwl-nndD3vDzMhZ6CiTYloA4RlrUDeRX7o=); /* Update path as needed */
+      background-size:  70vh 100%;
+   
+       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    }
+    .left   { background-position: left center; }
+    .center { background-position: center center;}
+    .right  { background-position: right center; 
+    margin-right: 0;}
+
+    #body2{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        padding-right: none;
+    }
+
+    #body1{
+        width: 50%;
+        margin-left: 10vh;
+        
+    }
+
+    #main-content1{
+     
+        width: 100%;
+        display: flex;
+      
+    }
+
+    #body1 p{
+        margin-top: 2vh;
+        font-size: 17px;
+    }
+    #body1 h3{
+        margin-top: 4vh;
+    }
+
+    #main-content2{
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+        justify-content: space-evenly;
+    }
+    #history{
+        /* height: 43vh; */
+        height: auto;
+        width: 30%;
+      
+        padding: 5vh;
+        border-radius: 5px;
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    #history h2{
+        margin-top: -2vh;
+       
+
+    }
+
+    #what-we-do{
+        /* height: 43vh; */
+        height: auto;
+        width: 44%;
+        
+        padding: 5vh;
+        border-radius: 5px;
+         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    }
+
+     #what-we-do h2{
+        margin-top: -2vh;
+        
+    }
+
+    #what-we-do p{
+        margin-top: 1vh;
+    }
+
+    #what-we-do li{
+        margin-top: 2vh;
+    }
+
+    #main-content2{
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+        justify-content: space-evenly;
+    }
+
+    #main-content3{
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        justify-content: space-evenly;
+    }
+
+    .contact-us{
+        /* height: 43vh; */
+        height: auto;
+        width: 38%;
+       
+        padding: 5vh;
+        border-radius: 5px;
+         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    }
+    
+    .contact-us h2{
+        margin-top: -2vh;
+        padding-bottom: 2vh;
+    }
+
+    #address h3{
+        margin-top: 2vh;
+    }
+
+    #address p{
+        
+        margin-left: 4vh;
+    }
+
+    #address i{
+        color: rgb(218,94,12);
+        margin-right: 2vh;   
+    }
+
+    #global { 
+        
+        height: auto;
+        width: 38%;
+       
+        padding: 5vh;
+        border-radius: 5px;
+         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    #global h2{
+         margin-top: -2vh;
+        padding-bottom: 2vh;
+    }
+
+    #london h3{
+        margin-top: 2vh;
+    }
+
+    #london p{
+        
+        margin-left: 4vh;
+    }
+
+    #london i{
+        color: rgb(218,94,12);
+        margin-right: 2vh;   
+    }
+
+    
+/* Tablets (768px and up) */
+@media screen and (max-width: 1024px) {
+  #main-content1,
+  #main-content2,
+  #main-content3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #body1,
+  #body2,
+  #history,
+  #what-we-do,
+  .contact-us,
+  #global {
+    width: 90%;
+    margin: 2vh 0;
+  }
+
+  .panel {
+    width: 80vw;
+    /* height: 40vh; */
+    height: auto;
+    background-size: cover;
+  }
+
+  #body1 h1 {
+    font-size: xx-large;
+  }
+}
+
+/* Phones (less than 768px) */
+@media screen and (max-width: 768px) {
+  #main-content1,
+  #main-content2,
+  #main-content3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #body1,
+  #body2,
+  #history,
+  #what-we-do,
+  .contact-us,
+  #global {
+    width: 90%;
+    margin: 2vh 0;
+  }
+
+  .panel {
+    width: 90vw;
+    /* height: 35vh; */
+    height: auto;
+    background-size: cover;
+  }
+
+  #body1 h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+
+  #body1 p,
+  #body1 h3 {
+    text-align: center;
+  }
+
+  #address p,
+  #london p {
+    margin-left: 2vh;
+  }
+
+  #main-content1 {
+    flex-direction: column-reverse;
+  }
+}
+
+    
+ 
+    
+
+
+
+      
+

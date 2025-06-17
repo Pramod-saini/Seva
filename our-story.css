@@ -1,0 +1,143 @@
+/* our story section */
+    .info {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  align-items: center;
+  padding: 0rem 7rem;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.info-text {
+  width: 50%;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  word-spacing: 1.5px;
+  color: #333;
+}
+
+.our-story {
+  padding-bottom: 0.5rem;
+  border-bottom: #f26522;
+}
+
+.info-img {
+  width: 50%;
+  padding-left: 8rem;
+  padding-top: 4rem;
+}
+
+.founder-info {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 2rem;
+  border-left-style: solid;
+  border-color: #f26522;
+  padding: 0rem 2rem 0rem 0rem;
+}
+
+.fou-head {
+  color: orangered;
+  padding-left: 1rem;
+}
+
+.fou-para {
+  text-align: center;
+  font-family: serif;
+  font-style: italic;
+}
+
+.fou-name {
+  text-align: right;
+  padding: 2px 8px 4px 0px;
+  font-family: serif;
+  font-style: italic;
+}
+
+.est-label {
+  background-color: orangered;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.story-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.est-label:hover {
+  background-color: rgb(185, 54, 7);
+  color: white;
+}
+
+.our-story-heading {
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+
+.our-story-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #d35400;
+  border-radius: 2px;
+}
+
+.our-story-section {
+  /* background: #fdf8f3; */
+  padding: 60px 20px;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.left-slide {
+  transform: translateX(-100px);
+}
+
+.right-slide {
+  transform: translateX(100px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  .info-text,
+  .info-img {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .info-img {
+    padding-left: 0;
+    padding-top: 2rem;
+    text-align: center;
+  }
+}
+
+
+

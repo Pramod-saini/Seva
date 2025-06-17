@@ -1,0 +1,447 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+body {
+  color: #333;
+  background-color: #faf5f3;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 1px solid orange;
+}
+
+header .nav-top{
+  display: flex;
+  height: 15px;
+  width: 600px;
+  align-items: center;
+  margin-left: auto;
+  background-color: #faf5f3;
+  color: #f26522;
+  border-radius: 50px;
+  font-size: 10px;
+   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+   gap: 10px;
+   padding-left: 20px;
+   cursor: pointer;
+   letter-spacing: 0.4px;
+
+}
+
+header .nav-top span:hover{
+  text-decoration: underline;
+  color: blue;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+header .logo img {
+  height: 48px;
+  border-radius: 100%;
+  background-color: #faf5f3;
+}
+header .logo span {
+  font-size: 24px;
+  color: #f26522;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;  
+  text-decoration: none;
+  color: #f26522;
+  font-size: medium;
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+#navbar{
+  margin-left: 30vh;
+}
+
+.donate-btn {
+  background-color: #f26522;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#content-area{
+  margin-top: 20vh;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h4 {
+  color: #d64f00;
+  margin-bottom: 10px;
+
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 span {
+  color: #f26522;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+.hero-buttons {
+  margin: 20px 0;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
+}
+
+.stats {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 72px;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid orange;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  color: #f26522;
+}
+.stat p {
+  margin-top: -0.5px;
+  margin-left: 10px;
+}
+
+.hero-img img {
+  max-width: 400px;
+  max-height: 600px;
+  border-radius: 10px;
+  margin-right: 40px;
+  margin-top: 50px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #f26522;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  header .nav-top{
+    display:none;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: auto;
+    right: 0;
+    width: 50%;
+    background-color: white;
+    padding: 15px 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a,
+  nav .donate-btn {
+    margin: 10px 0;
+  }
+  .logo img{
+    display: none;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .stats {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+
+
+
+/* 
+ * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  background-color: #faf5f3;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000;
+  
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-bottom: 2px solid orange;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.logo img {
+  height: 48px;
+  border-radius: 100%;
+}
+
+.logo span {
+  font-size: 24px;
+  color: #f26522;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #f26522;
+}
+
+.nav-top {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #faf5f3;
+  color: #f26522;
+  font-size: 12px;
+  padding: 5px 0;
+  border-top: 1px solid #eee;
+}
+
+.nav-top span:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f26522;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #222;
+  text-decoration: underline;
+}
+
+.donate-btn {
+  background-color: #f26522;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#content-area {
+  margin-top: 150px;
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.hero-text h1 span {
+  color: #f26522;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  border-top: 2px solid orange;
+  flex-wrap: wrap;
+}
+
+.stat {
+  flex: 1;
+  text-align: center;
+  min-width: 100px;
+}
+
+.stat h2 {
+  color: #f26522;
+}
+
+.hero-img img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background: white;
+    border-top: 1px solid #f26522;
+    padding: 10px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+  .nav-top{
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+} */

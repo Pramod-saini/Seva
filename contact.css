@@ -1,0 +1,302 @@
+/* contact section  */
+.contact-section {
+      margin: 20px;
+    }
+
+    .get-in-touch {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .get-in-touch .underline {
+      width: 60px;
+      height: 4px;
+      background-color: orangered;
+    }
+
+    .get-in-touch .subtext {
+      color: #ff4c3b;
+      font-size: 14px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 40px;
+    }
+
+    .con-details, .con-msg {
+      flex: 1 1 320px;
+      max-width: 500px;
+      padding: 2rem;
+      height: auto;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .con-list {
+      margin-top: 30px;
+      padding: 0;
+    }
+
+    .con-list i {
+      margin-right: 8px;
+      color: rgb(255, 125, 78);
+    }
+
+    .con-list li {
+      list-style: none;
+      margin: 10px 0 5px 0;
+      font-size: 15px;
+    }
+
+    .follow-us {
+      margin-top: 20px;
+    }
+
+    .soc-icons i {
+      font-size: 20px;
+      margin-right: 15px;
+      color: #888585;
+      transition: color 0.3s;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .soc-icons i:hover {
+      color: orangered;
+    }
+
+    .form-1, .form-2, .form-3 {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+
+    input[type="text"] {
+      height: 3rem;
+      padding-left: 0.5rem;
+      width: 100%;
+    }
+
+    .form-3 input[type="text"] {
+      height: 8.5rem;
+    }
+
+    .button {
+      display: flex;
+      justify-content: end;
+      padding: 0.5rem;
+    }
+
+    button {
+      background-color: orangered;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 10px;
+      width: 120px;
+      font-weight: bold;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #fb8d44;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    .box, .subscription-box {
+      padding: 2rem;
+      flex: 1 1 300px;
+      max-width: 500px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .box h3, .subscription-box h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .offices-container {
+      display: flex;
+      flex-direction: row;
+      gap: 90px;
+    }
+    .office-item h4 {
+      margin: 2px;
+      font-weight: bold;
+    }
+
+    .office-item p {
+      margin: 0;
+      color: #555;
+      line-height: 1.4;
+      margin-bottom: 30px;
+    }
+
+    .icon {
+      color: orangered;
+      margin-right: 6px;
+    }
+
+    .subscription-box {
+      /* background: #fefaf6; */
+      text-align: center;
+    }
+
+    .subscription-box p {
+      margin-bottom: 20px;
+      color: #666;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .input-group {
+      display: flex;
+      justify-content: center;
+    }
+
+    .input-group input {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+      flex: 1;
+    }
+
+    .input-group button {
+      padding: 10px 20px;
+      background: orangered;
+      border: none;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+      transition: background 0.3s ease;
+    }
+
+    .input-group button:hover {
+      background: #fb8d44;
+    }
+
+/* ✅ Responsive Styles */
+@media (max-width: 1024px) {
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .con-details,
+  .con-msg {
+    width: 90%;
+    margin-left: 0;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .box,
+  .subscription-box {
+    width: 90%;
+    height: auto;
+  }
+
+  .offices-container {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .office-column {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .get-in-touch {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-in-touch {
+    font-size: 22px;
+  }
+
+  .contact-section {
+    height: auto;
+    margin: 10px;
+  }
+
+  .form-1 {
+    flex-direction: column;
+  }
+
+  .button {
+    justify-content: center;
+  }
+
+  .form-3 input[type="text"] {
+    height: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .con-details,
+  .con-msg,
+  .box,
+  .subscription-box {
+    padding: 1rem;
+  }
+
+  .con-details,
+  .con-msg {
+    width: 100%;
+  }
+
+  .get-in-touch {
+    font-size: 20px;
+  }
+
+  .form-1 input[type="text"],
+  .form-2 input[type="text"],
+  .form-3 input[type="text"] {
+    font-size: 14px;
+  }
+
+  .button button {
+    width: 100%;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group input {
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .input-group button {
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #333;
+  /* background-color: #faf5f3; */
+}
+
+.forth-page h5{
+text-align: center;
+margin-top: 10vh;
+color: rgb(218,94,12);
+}
+h1{
+    text-align: center;   
+}
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;  /* ✅ allows wrapping on smaller screens */
+  gap: 4vh;         /* space between boxes */
+  margin-top: 5vh;
+}
+
+
+#small-box-container{
+    display: flex;
+    justify-content: center;
+}
+
+#boxa{
+height: auto;
+width: 22vw;
+min-width: 250px;
+max-height: 300px;
+margin: 2vh;
+padding: 2vh;
+box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.15);
+text-align: center;
+border-radius: 5px;
+}
+
+
+
+#small-boxa{
+    border-radius: 50%;
+    height: 12vh;
+    width: 12vh;
+    background-color:rgb(218,94,12) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#small-boxa i{
+    color: white;
+    font-size: 25px;
+ }
+
+#boxa h2 {
+    font-family: sans-serif;
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#boxa h3{
+    font-family: Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#boxa p{
+    font-family:sans-serif;
+    margin-top: 2vh;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.10px;
+}
+
+#boxb{
+height: auto;
+width: 22vw;
+min-width: 250px;
+max-height: 300px;
+margin: 2vh;
+padding: 2vh;
+box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.15);
+text-align: center;
+border-radius: 5px;
+}
+
+#boxc{
+height: auto;
+width: 22vw;
+min-width: 250px;
+max-height: 300px;
+margin: 2vh;
+padding: 2vh;
+box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.15);
+text-align: center;
+border-radius: 5px;
+}
+
+#boxd{
+height: auto;
+width: 22vw;
+min-width: 250px;
+max-height: 300px;
+margin: 2vh;
+padding: 2vh;
+box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.15);
+text-align: center;
+border-radius: 5px;
+}
+
+#boxb h2 {
+     font-family: sans-serif;
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#boxb h3{
+    font-family: Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#boxb p{
+     font-family:sans-serif;
+    margin-top: 2vh;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.10px;
+}
+#boxc h2 {
+     font-family: sans-serif;
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#boxc h3{
+   font-family: Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#boxc p{
+      font-family:sans-serif;
+    margin-top: 2vh;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.10px;
+}
+
+#boxd h2 {
+    font-family: sans-serif;
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#boxd h3{
+   font-family: Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#boxd p{
+     font-family:sans-serif;
+    margin-top: 2vh;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 0.10px;
+}
+
+#small-boxb{
+    border-radius: 50%;
+    height: 12vh;
+    width: 12vh;
+    background-color: rgb(26, 59, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#small-boxc{
+    border-radius: 50%;
+    height: 12vh;
+    width: 12vh;
+    background-color: rgb(12, 61, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#small-boxd{
+    border-radius: 50%;
+    height: 12vh;
+    width: 12vh;
+    background-color:rgb(191, 104, 231);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+#small-boxb i{
+    color: white;
+    font-size: 27px;
+ }
+
+ #small-boxc i{
+    color: white;
+    font-size: 28px;
+ }
+
+ #small-boxd i{
+    color: white;
+    font-size: 28px;
+ }
+
+
+
+/* For mobile phones */
+@media screen and (max-width: 480px) {
+  #boxa, #boxb, #boxc, #boxd {
+    width: 95vw;
+  }
+
+  #small-boxa, #small-boxb, #small-boxc, #small-boxd {
+    width: 10vh;
+    height: 10vh;
+  }
+
+  #small-boxa i, #small-boxb i, #small-boxc i, #small-boxd i {
+    font-size: 20px;
+  }
+
+  #boxa h2, #boxb h2, #boxc h2, #boxd h2,
+  #boxa h3, #boxb h3, #boxc h3, #boxd h3 {
+    font-size: 18px;
+  }
+
+  #boxa p, #boxb p, #boxc p, #boxd p {
+    font-size: 14px;
+  }
+}
+
